@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgb(238,174,211);
+background: radial-gradient(circle, rgba(238,174,211,1) 0%, rgba(233,175,212,1) 6%, rgba(232,175,212,1) 7%, rgba(225,176,214,1) 15%, rgba(222,176,215,1) 18%, rgba(219,177,216,1) 21%, rgba(211,178,217,1) 30%, rgba(195,180,221,1) 47%, rgba(189,181,222,1) 54%, rgba(183,182,224,1) 61%, rgba(179,183,225,1) 66%, rgba(148,187,233,1) 100%);
+
+        }
+        p{
+            display: none;
+        }
+        input:hover+p{
+            display:inline;
+            background-color: greenyellow;
+            font-family: monospace;
+        }
+        input:hover+p{
+            display:inline;
+            background-color: greenyellow;
+            font-family: monospace;
+
+        }
+        input[type="radio"]:checked{
+            background-color: greenyellow;
+            height:20px;
+            width:20px;
+
+        }
+        input[type="radio"]:checked+span{
+            background-color: greenyellow;
+            height:20px;
+            width:20px;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Sign-Up-Form</legend>
+    
+    <form action="response.html">
+        <table>
+            <tr>
+                <td><label>Name</label></td>
+                <td><input type="text" name="name" size="15" required><p>Enter the FirstNmae</p></td>
+            </tr>
+            <tr>
+                <td><label>College</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Primary email</label></td>
+                <td><input type="email" required><p>Enter the email</p></td>
+            </tr>
+            <tr>
+                <td><label>Secondary email</label></td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" min="8" required></td>
+            </tr>
+            <tr>
+                <td><label>Gender</label></td>
+                <td><input type="radio" name="gender" value="male">
+                    <span>male</span>
+                    <input type="radio" name="gender" value="female">
+                    <span>female</span>
+                    <input type="radio" name="gender" value="others">
+                    <span>others</span>
+                </td>
+                <tr>
+                    <td><label>Age</label></td>
+                    <td><input type="number" min="18" max="100"></td>
+                </tr>
+                <tr>
+                    <td><label>MOD</label></td>
+                    <td><input type="text" name="mod" value="ONLINE"></td>
+                </tr>
+            </tr>
+            
+        </table>
+        <input type="Submit" style="margin-top: 20px;">
+    </form>
+</fieldset>
+
+    
+    
+</body>
+</html>
